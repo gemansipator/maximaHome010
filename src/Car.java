@@ -1,12 +1,17 @@
 public abstract class Car {
     String color;
-    int type;
+    String model;
 
-    public void start(){
+    public Car(String color, String model) {
+        this.color = color;
+        this.model = model;
+    }
+
+    protected void start(){
         System.out.println("Некая машина поехала");
     };
-    public void stop(){
+    protected void stop(){
         System.out.println("Некая машина остановилась");
     };
-    abstract void madeASound();  //издать звук
+    protected abstract void madeASound();  //издать звук
 }
