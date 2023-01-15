@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Tesla tesla = new Tesla();
+        tesla.start();
+        tesla.stop();
+        tesla.madeASound();
+
     }
 }
